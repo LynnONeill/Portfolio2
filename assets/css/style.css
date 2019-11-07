@@ -1,19 +1,21 @@
+*{
+    margin: 0px;
+}
 body {
     margin: 0;
     padding: 0;
 }
+/* below styling for navbar - all pages */
 .navbar {
-    height: 60px;
     background-color: #ffffff;
     border-top: solid #ccc;
     border-bottom: solid #ccc;
 }
-.navbar-nav {
-    margin-right: 250px;
-}
 
+.brand-container {
+    padding-left: 200px;
+}
 .navbar-brand {
-    margin-left: 260px;
     height: 60px;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -22,27 +24,11 @@ body {
     background-color: #4aaaa5;
 }
 
-
-.wrapper {
-    margin-top: 35px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.contact-form {
-    margin-top: 35px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 35px;
-}
-form {
-    padding: 15px;
-}
-p {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+/* below is styling for main (white) body block - all pages */
+.main {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    background-color: white;
 }
 h2 {
     color: #4aaaa5;
@@ -50,21 +36,40 @@ h2 {
     border-bottom: solid 3px #cccccc;
 }
 
+/* below is styling for About page */
 
+    /* first paragraph - About page */
 .first {
-    margin-left: 0px;
-    float:left;
+    margin-left: 10px;
+    float: left;
+}
+    /* all other paragraphs - About page */
+p {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.portfolio_image_container {
-    margin-left: 200px;
-    margin-right: 200px;
+/* below is styling for Contact page */
+.contact-form {
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
 }
 
+/* below is styling for Portfolio page */
+.port {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 .image-1 {
     position: relative;
     margin-top: 15px;
     margin-left: 15px;
+    margin-right: 15px;
     opacity: 0.8;
 }
 
@@ -115,7 +120,8 @@ h2 {
  
 }
 /* Styling for footer on all pages */
-.footer {
+footer {
+    width: 100%;
     padding: 30px 0;
     clear: both;
     font-size: 12px;
@@ -128,3 +134,85 @@ h2 {
 }
 
 
+@media screen and (max-width: 320px) {
+    .main{
+        margin: auto;
+    }
+    .navbar-brand {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main{
+        margin: auto;
+    }
+    .navbar-brand {
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main {
+       margin: auto;
+       margin-bottom: 35px;
+    }
+    .navbar-brand {
+        margin-left: 5px;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    .main {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+} */
+
+
+    @media screen and (min-width: 1024px) {
+        .main {
+            margin-left: 125px;
+            margin-right: 125px;
+        }
+        .navbar-brand {
+            margin-left: 150px;
+        }
+        ul {
+            margin-right: 150px;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .main {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .navbar-brand {
+            margin-left: 285px;
+        }
+        ul {
+            margin-right: 300px;
+        }
+        .first {
+            padding-top: 25px;
+        }
+    }   
+    /* @media screen and (min-width: 2560px) {
+        .main {
+          
+           
+        }
+        p {
+            font-size: 30px;
+        }
+        .biopic {
+            margin-top: 15px;
+            height: 400px;
+            width: 340px;
+        }
+        .navbar-brand {
+            margin-left: 600px;
+        }
+        ul {
+            margin-right: 300px;
+        } */
