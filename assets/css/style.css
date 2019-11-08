@@ -28,6 +28,8 @@ body {
 .main {
     margin-top: 45px;
     margin-bottom: 45px;
+    padding-bottom: 25px;
+    margin: auto;
     background-color: white;
 }
 h2 {
@@ -131,10 +133,20 @@ footer {
     background: #666666;
     border-top: 8px solid #4aaaa5;
     height: 50px;
+    margin-top: 75px;
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .main{
+        margin: auto;
+    }
+    .navbar-brand {
+        margin-left: 35 px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1019px) {
     .main{
         margin: auto;
     }
@@ -143,76 +155,31 @@ footer {
     }
 }
 
-@media screen and (max-width: 375px) {
-    .main{
-        margin: auto;
-    }
-    .navbar-brand {
-        margin-left: 5px;
-    }
-}
-@media screen and (max-width: 425px) {
-    .main {
-       margin: auto;
-       margin-bottom: 35px;
-    }
-    .navbar-brand {
-        margin-left: 5px;
-    }
-}
-
-/* @media screen and (max-width: 768px) {
-    .main {
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-} */
-
-
-    @media screen and (min-width: 1024px) {
-        .main {
-            margin-left: 125px;
-            margin-right: 125px;
-        }
-        .navbar-brand {
-            margin-left: 150px;
-        }
-        ul {
-            margin-right: 150px;
-        }
-    }
-
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1020px) {
         .main {
             margin-left: 150px;
             margin-right: 150px;
+            margin: auto;
+            margin-bottom: 35px;
+            font-size: 20px;
         }
         .navbar-brand {
-            margin-left: 285px;
+            margin-left: 73px;
         }
         ul {
-            margin-right: 300px;
+            margin-right: 100px;
         }
         .first {
+            margin-left: -20px;
             padding-top: 25px;
         }
+        .biopic {
+            width: 275px;
+            height: 275px;
+        }
+      
     }   
-    /* @media screen and (min-width: 2560px) {
-        .main {
+   
           
            
-        }
-        p {
-            font-size: 30px;
-        }
-        .biopic {
-            margin-top: 15px;
-            height: 400px;
-            width: 340px;
-        }
-        .navbar-brand {
-            margin-left: 600px;
-        }
-        ul {
-            margin-right: 300px;
-        } */
+      
