@@ -5,6 +5,11 @@ body {
     margin: 0;
     padding: 0;
 }
+.container {
+    margin-top: 35px;
+}
+
+}
 /* below styling for navbar - all pages */
 .navbar {
     background-color: #ffffff;
@@ -135,7 +140,11 @@ footer {
     height: 50px;
     margin-top: 75px;
 }
-
+@media screen and (max-width: 320px) {
+    .container {
+        padding-left: 3px;
+    }
+}
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .main{
@@ -163,8 +172,10 @@ footer {
             margin-bottom: 35px;
             font-size: 20px;
         }
+
+    
         .navbar-brand {
-            margin-left: 73px;
+            margin-left: 110px;
         }
         ul {
             margin-right: 100px;
